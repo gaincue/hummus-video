@@ -8,10 +8,11 @@ export const Subtitle: React.FC = () => {
 		<div
 			style={{
 				fontFamily: 'Helvetica, Arial',
-				fontSize: 40,
+				fontSize: 50,
 				textAlign: 'center',
 				position: 'absolute',
-				bottom: 140,
+				// bottom: 140,
+				top: 120,
 				width: '100%',
 				opacity,
 			}}

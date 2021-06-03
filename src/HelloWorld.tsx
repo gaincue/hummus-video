@@ -2,6 +2,7 @@ import {interpolate, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Logo} from './HelloWorld/Logo';
 import {Subtitle} from './HelloWorld/Subtitle';
 import {Title} from './HelloWorld/Title';
+import {Demovideo} from './HelloWorld/Demovideo';
 
 export const HelloWorld: React.FC<{
 	titleText: string;
@@ -33,6 +34,9 @@ export const HelloWorld: React.FC<{
 				<Sequence from={transitionStart + 50} durationInFrames={Infinity}>
 					<Subtitle />
 				</Sequence>
+				{/* <Sequence from={0} durationInFrames={Infinity}>
+					<Demovideo />
+				</Sequence> */}
 			</div>
 		</div>
 	);
