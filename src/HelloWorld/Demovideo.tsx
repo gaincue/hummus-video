@@ -8,13 +8,23 @@ export const Demovideo = () => {
 				style={{width: '100%'}}
 				src="https://hummus-s3.s3-ap-southeast-1.amazonaws.com/lesson_01/ep_01.mp4"
 			/>
-			<Sequence from={100} durationInFrames={Infinity}>
-				<Subtitle />
+			<Sequence from={70} durationInFrames={65}>
+					<Subtitle text="Olive loves eating" />
 			</Sequence>
-			<Sequence from={200} durationInFrames={Infinity}>
+            <Sequence from={135} durationInFrames={65}>
+					<Subtitle text="She loves to eat rice" />
+			</Sequence>
+            <Sequence from={200} durationInFrames={100}>
+					<Subtitle text="noodles, chickens, vegetables" />
+			</Sequence>
+            <Sequence from={300} durationInFrames={90}>
+					<Subtitle text="and most of all, bananas!" />
+			</Sequence>
+			<Sequence from={400} durationInFrames={Infinity}>
 				<button
 					type="button"
 					style={{width: '250px', height: '120px', fontSize: '50px'}}
+					onClick={() => console.log('button clicked')}
 				>
 					Test
 				</button>
